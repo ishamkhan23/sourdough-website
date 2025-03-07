@@ -1,0 +1,376 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Nunito:wght@400;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+
+/* Global Styles */
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #F7F7F7;
+  margin: 0;
+  padding: 0;
+}
+
+/* ANNOUNCEMENT BAR */
+.announcement-bar {
+    background-color: #FAF3D3; /* Soft Yellow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* Increased padding for spacing */
+  }
+  
+  /* ANNOUNCEMENT LOGO */
+  .announcement-logo {
+    width: 500px; /* SIGNIFICANTLY wider for a stretched effect */
+    height: 80px; /* Keeps it slim */
+    object-fit: cover; /* Stretches it horizontally while maintaining clarity */
+  }
+  
+  
+  /* NAVBAR STYLES */
+.custom-navbar {
+    background-color: white;
+    border-top: 3px solid black; /* Black line at the top */
+    border-bottom: 3px solid black; /* Black line at the bottom */
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: center; /* Centers everything */
+    align-items: center;
+  }
+  
+  /* NAVBAR LINKS */
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* Even spacing across the whole navbar */
+    width: 100%; /* Ensures full width of navbar */
+    max-width: 900px; /* Prevents links from spreading too far apart */
+    padding: 0;
+  }
+  
+  .navbar-nav .nav-item {
+    flex: 1; /* Makes each link take up equal space */
+    text-align: center; /* Ensures links are evenly centered */
+  }
+  
+  .navbar-nav .nav-link {
+    text-decoration: none;
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: black;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 10px 0; /* Ensures equal padding */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #D2691E;
+  }
+  
+  /* FIX "ORDER NOW" ALIGNMENT */
+  .order-link {
+    font-weight: bold;
+    color: black;
+    border: none; /* Remove button styling */
+    padding: 0;
+    background: none;
+    text-align: center;
+  }
+  
+  .order-link:hover {
+    color: #D2691E;
+  }
+  
+
+/* SOCIAL MEDIA ICONS */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: black;
+  font-size: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #D2691E;
+}
+
+.social-icons i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HERO SECTION */
+.hero {
+  background-color: #FAF3D3; /* Soft yellow background */
+  padding: 5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* HERO IMAGE GRID */
+.hero-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.hero-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* SECTION BACKGROUNDS */
+.section-light {
+  background-color: #FAF3D3; /* Pale Yellow Background */
+  padding: 3rem 0;
+}
+
+.section-dark {
+  background-color: #D2691E;
+  color: white;
+  padding: 3rem 0;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image {
+    width: 180px;
+    height: 180px;
+  }
+}
+/* SMALLER SOURDOUGH SECTION */
+.sourdough-section {
+    background-color: white;
+    padding: 0.5rem 1rem; /* Reduced Padding to Make Section Smaller */
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  /* Adjusted Content Layout */
+  .sourdough-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+    gap: 100px; /* Increased Spacing Between Image and Text */
+  }
+  
+  /* LEFT SIDE: Heading and Image */
+  .sourdough-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -60px; /* Moves everything left */
+  }
+  
+  .sourdough-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 40px;
+    white-space: nowrap;
+  }
+  
+  .sourdough-image {
+    width: 100%;
+    max-width: 600px; /* Larger Image */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* RIGHT SIDE: Expanded Text Box */
+  .sourdough-text {
+    flex: 2.5; /* Makes the text section wider */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sourdough-box {
+    background-color: #FCE1A5; /* Light Orange Background */
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #000000; /* Subtle Border */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Increased Width */
+    width: 100%;
+  }
+  
+  .sourdough-description {
+    font-family: 'Playfair Display', serif; /* Now matches the heading */
+    font-size: 1.3rem;
+    color: #444;
+    line-height: 1.9;
+    text-align: left;
+  }
+  
+  /* RESPONSIVE STYLING */
+  @media (max-width: 1024px) {
+    .sourdough-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .sourdough-left {
+      align-items: center;
+      margin-left: 0; /* Reset for smaller screens */
+    }
+  
+    .sourdough-text {
+      text-align: center;
+    }
+  
+    .sourdough-box {
+      text-align: left;
+      max-width: 100%;
+    }
+  
+    .sourdough-image {
+      width: 100%;
+      max-width: 450px; /* Adjusted Image Size for Mobile */
+    }
+  }
+  
+/* SOURDOUGH COMPONENTS SECTION */
+.sourdough-components {
+    background-color: #E3F2FD; /* Light Blue Background */
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  /* Heading Styling */
+  .components-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 40px;
+  }
+  
+  /* Circles Grid */
+  .components-grid {
+    display: flex;
+    justify-content: space-between; /* Distribute evenly across full width */
+    align-items: center;
+    max-width: 1200px; /* Limits max width for balance */
+    margin: 0 auto;
+    padding: 0 5%; /* Ensures even spacing from screen edges */
+  }
+  
+  /* Circle Images */
+  .component-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    flex: 1; /* Makes them take equal space */
+    max-width: 250px; /* Prevents them from getting too big */
+  }
+  
+  .component-circle img {
+    width: 180px; /* Increased Circle Size */
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #D2691E; /* Nice Border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .component-circle img:hover {
+    transform: scale(1.2); /* Bigger Hover Effect */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft Shadow */
+  }
+  
+  .component-circle p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem; /* Slightly Bigger Font */
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 1024px) {
+    .components-grid {
+      justify-content: space-around; /* Ensures proper spacing on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .components-grid {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px; /* More spacing for stacked layout */
+    }
+  
+    .component-circle img {
+      width: 160px; /* Slightly smaller for mobile */
+      height: 160px;
+    }
+  }
+  
