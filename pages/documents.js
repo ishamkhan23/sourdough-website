@@ -5,7 +5,9 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Nunito:wght@300;400&display=swap" rel="stylesheet" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />
@@ -15,4 +17,3 @@ export default class MyDocument extends Document {
     );
   }
 }
-
